@@ -12,17 +12,17 @@ As part of our open-source initiative, we have developed a fully functional, int
 
 To rigorously evaluate marketing campaign performance, the project formally tracks the following core metrics:
 
-* **Overall Conversion Rate**
-  - **Definition:** The proportion of total contacted clients who successfully subscribed to a term deposit.
-  - **Formula:** $(\text{Total Subscribed Clients} / \text{Total Contacted Clients}) \times 100$
+* **1. Campaign Response & Conversion Rate**
+  - **Definition:** The proportion of total contacted clients who responded positively and successfully subscribed to a term deposit. In this dataset, response and conversion evaluate the same underlying binary target outcome.
+  - **Formula:** $(\text{Total Subscribed Clients (y = yes)} / \text{Total Contacted Clients}) \times 100$
   - **Measurability:** Calculated directly from the target outcome column divided by the total row count in the dataset.
 
-* **Contact Channel Effectiveness**
+* **2. Contact Channel Effectiveness**
   - **Definition:** The conversion rate broken down by the specific communication method used (e.g., cellular, telephone) to identify which channel drives the highest engagement.
   - **Formula:** $(\text{Subscribed Clients per Channel} / \text{Total Contacts per Channel}) \times 100$
   - **Measurability:** Derived by grouping the dataset by the contact method feature and computing the subscription ratio for each group.
 
-* **Segment Targeting Efficiency (Job & Age Group)**
+* **3. Segment Targeting Efficiency (Job & Age Group)**
   - **Definition:** The response and conversion rate across distinct demographic and professional segments to pinpoint high-value customer profiles.
   - **Formula:** $(\text{Subscribed Clients within a Specific Segment} / \text{Total Contacts in That Segment}) \times 100$
   - **Measurability:** Calculated by applying the demographic categorical filters (`Job`, `Age Group`) against the conversion outcome.
