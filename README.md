@@ -132,10 +132,3 @@ Then open the local URL shown in your terminal (usually `http://localhost:8501`)
 ## 📂 Dataset
 
 [UCI Bank Marketing Dataset](https://archive.ics.uci.edu/dataset/222/bank+marketing): data from direct marketing campaigns (phone calls) of a Portuguese banking institution, where the goal is to predict whether a client subscribes to a term deposit.
-
----
-
-## 👤 Author
-
-**Gaurav Patil**
-[LinkedIn](https://www.linkedin.com/in/gaurav-patil-a2bb391b9/) · [GitHub](https://github.com/GP26902)
