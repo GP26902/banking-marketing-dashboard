@@ -26,7 +26,7 @@ PLOT_TEMPLATE = "plotly_dark"
 # 2. Load Dataset
 @st.cache_data
 def load_banking_data():
-    df = pd.read_csv("train.csv", sep=";")
+    df = pd.read_csv("data/train.csv", sep=";")
 
     # Preprocess Age into Age Groups to satisfy age filtering requirements
     if "age" in df.columns:

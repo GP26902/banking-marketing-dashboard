@@ -16,6 +16,7 @@ An interactive analytics dashboard built with **Python, Pandas, Plotly, and Stre
 - [Key Performance Indicators](#-key-performance-indicators)
 - [Exploratory Data Analysis](#-exploratory-data-analysis)
 - [Getting Started](#-getting-started)
+- [Project Structure](#-project-structure)
 - [Project Standards](#-project-standards)
 
 ---
@@ -35,7 +36,7 @@ This project helps marketing stakeholders answer practical questions about a ban
 
 | Feature | Description |
 |---|---|
-| **Dataset integration** | Automatically loads and parses the UCI Bank Marketing dataset (`train.csv`) using semicolon delimiters (`sep=";"`). |
+| **Dataset integration** | Automatically loads and parses the UCI Bank Marketing dataset (`data/train.csv`) using semicolon delimiters (`sep=";"`). |
 | **5 dynamic filters** | Sidebar filters for **Occupation/Job**, **Age Group** (auto-binned from raw age), **Education Level**, **Contact Method**, and **Previous Outcome**. |
 | **Live KPI cards** | Filtered Customer Count, Average Account Balance ($), and Campaign Conversion Rate (%). |
 | **Interactive visualizations** | Multi-tab panels covering demographic segmentation, job-sector balances, and campaign-specific characteristics. |
@@ -105,7 +106,7 @@ git clone https://github.com/GP26902/banking-marketing-dashboard.git
 cd banking-marketing-dashboard
 
 # Install dependencies
-pip install streamlit pandas plotly
+pip install -r requirements.txt
 ```
 
 ### Run the dashboard
@@ -116,7 +117,25 @@ streamlit run app.py
 
 Then open the local URL shown in your terminal (usually `http://localhost:8501`).
 
-> **Note:** Make sure `train.csv` is in the location the app expects before launching.
+> **Note:** The app reads the dataset from `data/train.csv`, so run the command from the repository root.
+
+---
+
+## 🗂 Project Structure
+
+```
+banking-marketing-dashboard/
+├── app.py                  # Streamlit dashboard
+├── requirements.txt        # Python dependencies
+├── README.md
+├── data/
+│   ├── train.csv           # UCI Bank Marketing dataset (used by the app)
+│   └── test.csv
+├── docs/
+│   ├── task-summaries/     # One summary per completed task
+│   └── screenshots/        # Dashboard screenshots
+└── notebooks/              # Optional exploratory notebooks
+```
 
 ---
 
