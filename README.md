@@ -18,6 +18,8 @@ An interactive analytics dashboard built with **Python, Pandas, Plotly, and Stre
 - [Getting Started](#-getting-started)
 - [Project Structure](#-project-structure)
 - [Project Standards](#-project-standards)
+- [Contributing](#-contributing)
+- [License](#-license)
 
 ---
 
@@ -102,8 +104,8 @@ Segment Conversion = (Subscribed Clients in Segment / Total Contacts in Segment)
 
 ```bash
 # Clone the repository
-git clone https://github.com/GP26902/banking-marketing-dashboard.git
-cd banking-marketing-dashboard
+git clone https://github.com/GP26902/banking-marketing-campaign-analytics.git
+cd banking-marketing-campaign-analytics
 
 # Install dependencies
 pip install -r requirements.txt
@@ -124,10 +126,15 @@ Then open the local URL shown in your terminal (usually `http://localhost:8501`)
 ## 🗂 Project Structure
 
 ```
-banking-marketing-dashboard/
+banking-marketing-campaign-analytics/
 ├── app.py                  # Streamlit dashboard
 ├── requirements.txt        # Python dependencies
 ├── README.md
+├── LICENSE
+├── CONTRIBUTING.md
+├── .gitignore
+├── .github/
+│   └── pull_request_template.md
 ├── data/
 │   ├── train.csv           # UCI Bank Marketing dataset (used by the app)
 │   └── test.csv
@@ -151,3 +158,15 @@ banking-marketing-dashboard/
 ## 📂 Dataset
 
 [UCI Bank Marketing Dataset](https://archive.ics.uci.edu/dataset/222/bank+marketing): data from direct marketing campaigns (phone calls) of a Portuguese banking institution, where the goal is to predict whether a client subscribes to a term deposit.
+
+---
+
+## 🤝 Contributing
+
+Work on a branch, open a pull request into `main`, and add the project manager as a reviewer. See [CONTRIBUTING.md](CONTRIBUTING.md) for the full workflow.
+
+---
+
+## 📄 License
+
+Released under the [MIT License](LICENSE).
